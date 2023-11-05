@@ -16,11 +16,13 @@
       </div>
       <div class="artboard"></div>
       <div class="controllers">
-        <button class="btn" id="black">BLACK</button>
-        <button class="btn" id="color">COLOR</button>
-        <button class="btn" id="erase">ERASE</button>
-        <button class="btn" id="clear">CLEAR</button>
-        <button class="btn" id="canva-size">16X16</button>
+        <button class="btn" id="black" onclick="blackMode()">BLACK</button>
+        <button class="btn" id="color" onclick="colorMode()">COLOR</button>
+        <button class="btn" id="erase" onclick="eraseMode()">ERASE</button>
+        <button class="btn" id="clear" onclick="clearArtboard()">CLEAR</button>
+        <button class="btn" id="canva-size" onclick="changeArtboardSize()">
+          16X16
+        </button>
       </div>
     </div>
   </body>
