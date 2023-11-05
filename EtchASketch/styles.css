@@ -67,6 +67,7 @@ body {
   top: 6vh;
   position: absolute;
   display: flex;
+  padding: 3px;
 }
 
 .controllers {

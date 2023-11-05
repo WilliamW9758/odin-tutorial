@@ -11,21 +11,27 @@ let size = 2; // 1, 2, 4, 8 * 8 -> 8, 16, 32, 64
 let cellWidth = 46 / (8 * size);
 let drawing = false;
 
-const downListener = () => {
-  drawing = true;
-};
-
-const moveListener = (event) => {
+function draw() {
   if (drawing) {
     console.log("Drawing");
     if (mode === "black") {
       event.target.style.cssText += "background-color: black;";
     } else if (mode === "color") {
-      event.target.style.cssText += "background-color: red;";
+      var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      event.target.style.cssText += "background-color: #" + randomColor + ";";
     } else if (mode === "erase") {
       event.target.style.cssText += "background-color: white;";
     }
   }
+}
+
+const downListener = () => {
+  drawing = true;
+  draw();
+};
+
+const moveListener = (event) => {
+  draw();
 };
 
 const upListener = () => {
