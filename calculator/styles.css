@@ -78,3 +78,19 @@ button:hover {
 button:active {
   background-color: #bbb;
 }
+
+.author-container {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.author {
+  color: white;
+  text-align: center;
+}
+
+.author:link,
+.author:visited {
+  text-decoration: none;
+}
